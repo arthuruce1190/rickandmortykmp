@@ -34,8 +34,7 @@ fun App() {
         setSingletonImageLoaderFactory { context ->
             ImageLoader.Builder(context)
                 .components {
-                    add(
-                        KtorNetworkFetcherFactory())
+                    add(KtorNetworkFetcherFactory())
                 }
                 .build()
         }
